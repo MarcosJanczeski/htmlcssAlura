@@ -67,6 +67,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  padding-bottom: 67px;
   /* gap: 6%; */
 }
 
@@ -141,17 +142,16 @@ h2 {
 }
 
 footer p {
-  /* position: absolute;
-  top: 100vh;
-  margin-top: -42px;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  /* line-height: 4vh; */
   text-align: center;
   background-color: var(--color-button-hover);
   color: var(--color-emphasis);
-  font-size: 14px;
-  line-height: 14px;
-  padding: 14px 0;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 12px 0;
 }
 
 
