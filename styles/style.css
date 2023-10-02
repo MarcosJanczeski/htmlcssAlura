@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --background-color: #000000;
+  --color: #f6f6f6;
+  --color-emphasis: #22d4fd;
+  --color-button: #000000;
+  --color-button-hover: #272727;
+  --border-button: 2px solid #22e5fd;
+  /*
+   --background-color: #f6f6f6;
+  --color: #000000;
+  --color-emphasis: #272727;
+  --color-button: #f6f6f6;
+  --color-button-hover: #e0e0e0;
+  --border-button: 2px solid #272727;
+  */
+  /*
+  --background-color: #331D2C;
+  --color: #EFE1D1;
+  --color-emphasis: #A78295;
+  --color-button: #331D2C;
+  --color-button-hover: #272727;
+  --border-button: 2px solid #A78295;
+*/
+  --font-family-title: Krona One;
+  --font-family-paragraph: Montserrat;
+  --font-size-title: 2rem;
+  --font-size-paragraph: 1.5rem;
+  --line-height-title: 3rem;
+  --line-height-paragraph: 2.25rem;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: var(--background-color);
+  color: var(--color);
+  height: 100vh;
+}
+
+nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu {
+  padding: var(--font-size-paragraph) 0;
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-paragraph);
+  color: var(--color-emphasis);
+}
+
+main {
+  /*margin: 0 5%;*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 6%; */
+}
+
+.color-emphasis {
+  color: var(--color-emphasis);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 2rem;
+}
+
+h1 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  /* 155.556% */
+}
+
+p,
+li {
+  font-size: var(--font-size-paragraph);
+  font-family: var(--font-family-paragraph);
+  line-height: var(--line-height-paragraph);
+}
+
+.links-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.photo {
+  width: 45%;
+  min-width: 250px;
+  max-width: 490px;
+}
+
+h2 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-paragraph);
+  line-height: var(--line-height-paragraph);
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: var(--font-family-paragraph);
+  font-size: var(--font-size-paragraph);
+  color: var(--color);
+  font-weight: 600;
+  text-align: center;
+  line-height: 80px;
+  border: var(--border-button);
+  border-radius: 16px;
+  width: 67%;
+  background-color: var(--color-button);
+}
+
+.button-icon:hover {
+  background-color: var(--color-button-hover);
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+}
+
+footer p {
+  /* position: absolute;
+  top: 100vh;
+  margin-top: -42px;*/
+  width: 100%;
+  /* line-height: 4vh; */
+  text-align: center;
+  background-color: var(--color-button-hover);
+  color: var(--color-emphasis);
+  font-size: 14px;
+  line-height: 14px;
+  padding: 14px 0;
+}
+
+
+.link-certificate {
+  text-decoration: none;
+  color: var(--color-emphasis);
+}
+
+@media (max-width: 1200px) {
+  /* main{
+    flex-direction: column-reverse;
+    gap: 80px;
+  } */
+
+  .description,
+  .photo {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .description {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: var(--font-size-paragraph);
+    line-height: var(--line-height-paragraph);
+  }
+
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column-reverse;
+      gap: 80px;
+    }
+  }
+}
