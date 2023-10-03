@@ -153,7 +153,10 @@ footer p {
   line-height: 12px;
   padding: 12px 0;
 }
-
+footer p img {
+  width: 18px;
+  height: 18px;
+}
 
 .link-certificate {
   text-decoration: none;
